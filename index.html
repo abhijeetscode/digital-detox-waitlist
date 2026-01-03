@@ -264,7 +264,7 @@
           });
           statusEl.textContent = "You're on the waitlist. Check your sheet.";
           const quote = quotes[Math.floor(Math.random() * quotes.length)];
-          showToast(quote);
+          showToast(`You're on the waitlist. ${quote}`);
           emailInput.value = "";
         } catch (error) {
           statusEl.textContent = "Submission failed. Check your script URL.";
